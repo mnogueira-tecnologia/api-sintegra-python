@@ -1,37 +1,43 @@
 # Integração da API SINTEGRA em Python – Consulta de Inscrição Estadual em tempo real
 
-Consulta de dados cadastrais no SINTEGRA por UF utilizando a API Sintegra ArquivoNFe.
+Consulta de dados cadastrais no SINTEGRA por UF utilizando a API SINTEGRA ArquivoNFe.
 
 ## 🔎 Palavras-chave
 
-- API Sintegra
-- Consulta Sintegra
-- Sintegra CCC
+- API SINTEGRA
+- Consulta SINTEGRA
+- SINTEGRA CCC
 - Consulta Inscrição Estadual
 - API Fiscal Brasil
 
-Com uma interface intuitiva, permite a consulta simultânea de múltiplos CNPJs, CPF´s ou IE´s de acordo com suas necessidades.
+Permite realizar consultas por **CNPJ, CPF ou Inscrição Estadual (IE)**, conforme a UF informada.
 
-<b>Benefícios</b>
-✔ Consulta por CNPJ, CPF ou IE
-✔ Dados atualizados em tempo real
-✔ Integração simples via API REST
+## Benefícios
 
-<b>Casos de uso</b>
-✔ Validação antes da emissão de NF
-✔ Conferência cadastral automática
-✔ Verificação de regime tributário
+✔ Consulta por CNPJ, CPF ou IE  
+✔ Dados cadastrais retornados pela API  
+✔ Integração simples via API REST  
+✔ Processamento assíncrono com `request_id`
+
+## Casos de uso
+
+✔ Validação antes da emissão de NF  
+✔ Conferência cadastral automática  
+✔ Verificação de informações cadastrais  
 ✔ Processos de KYC (Know Your Customer)
 
-<b>Diferenciais</b>
-✔ Consulta realizada em tempo real na fonte pública oficial.
-✔ Acesso seguro via https em servidor Oracle Cloud Brasil, com alta performance e baixa latência. Seguro e criptografado, atendendo as boas práticas de segurança da informação de acordo com a legislação vigente.
-✔ Painel de controle web para configurações, consultas manual e acompanhamento das integrações via API
-✔ Consulta por CNPJ, CPF, IE e UF
+## Diferenciais
+
+✔ Consulta realizada junto à fonte oficial disponibilizada para a UF consultada.  
+✔ Comunicação segura via HTTPS.  
+✔ Servidor hospedado na Oracle Cloud no Brasil.  
+✔ Painel de controle web para configurações, consultas manuais e acompanhamento das integrações via API.  
+✔ Consulta por CNPJ, CPF ou IE, conforme a documentação da API.
 
 <br>
 
-<h3>🚀 Requisitos</h3> 
+## 🚀 Requisitos
+
 - Windows ou Linux
 - Python 3.x
 - Biblioteca `requests`
@@ -50,22 +56,31 @@ https://portal.arquivo-nfe.com
 
 ### 2️⃣ Copie seu Token
 
-Após login no portal:
+Após o login no portal:
 
-Menu **Meu Token**
+Acesse o menu **Meu Token**.
 
-Copie o **código de cliente**.
+Copie o seu token de acesso.
+
+> ⚠️ **Nunca publique seu token de acesso no GitHub.**
 
 ---
 
 ### 3️⃣ Instalação do Python
 
+Em breve.
 
 ---
 
-### 4️⃣ Script Python
+### 4️⃣ Instalação das dependências
 
+Em breve.
 
+---
+
+### 5️⃣ Script Python
+
+Em breve.
 
 ---
 
@@ -77,10 +92,9 @@ https://www.arquivo-nfe.com/api-sintegra-ccc-excel
 
 ---
 
-
 ## 📄 Exemplo de retorno da API
 
-![Retorno json](exemplo_ccc_retorno_json.png)
+![Retorno JSON](exemplo_ccc_retorno_json.png)
 
 ---
 
@@ -97,7 +111,6 @@ Se este projeto foi útil para você:
 ⭐ **Deixe uma estrela no repositório**
 
 Isso ajuda outras pessoas a encontrarem o projeto.
-
 
 ---
 
