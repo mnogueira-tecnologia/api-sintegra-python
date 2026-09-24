@@ -1,8 +1,6 @@
 # Integração da API SINTEGRA em Python – Consulta de Inscrição Estadual em tempo real
 
-Valide a situação fiscal de contribuintes diretamente nas SEFAZ estaduais com alta confiabilidade.
-
-Integração com as APIs do portal **arquivo-nfe.com**.
+Consulta de dados cadastrais no SINTEGRA por UF utilizando a API Sintegra ArquivoNFe.
 
 ## 🔎 Palavras-chave
 
@@ -11,8 +9,6 @@ Integração com as APIs do portal **arquivo-nfe.com**.
 - Sintegra CCC
 - Consulta Inscrição Estadual
 - API Fiscal Brasil
-
-Integre seu sistema Python a automatização de validação cadastral de contribuintes em tempo real, consultando diretamente as fontes oficiais das SEFAZ estaduais.
 
 Com uma interface intuitiva, permite a consulta simultânea de múltiplos CNPJs, CPF´s ou IE´s de acordo com suas necessidades.
 
@@ -35,19 +31,12 @@ Com uma interface intuitiva, permite a consulta simultânea de múltiplos CNPJs,
 
 <br>
 
-<h3>🚀 Tecnologias Utilizadas</h3> 
-
-Python, e API Sintegra ArquivoNfe API Plataform
-
-<br>
-
-<h3>📂 Estrutura do Projeto</h3>
-
-Api_MNT_Consulta_Sintegra_e_CNPJ_Receita.xlsm
+<h3>🚀 Requisitos</h3> 
+- Windows ou Linux
+- Python 3.x
+- Biblioteca `requests`
 
 <br>
-
----
 
 ## ⚙️ Como utilizar
 
@@ -69,21 +58,14 @@ Copie o **código de cliente**.
 
 ---
 
-### 3️⃣ Baixe a planilha
+### 3️⃣ Instalação do Python
 
-Faça download da planilha:
-
-https://www.arquivo-nfe.com/api-sintegra-e-cnpj-receita-excel
-
-Na guia **Configuração**, informe seu **token de acesso à API**.
 
 ---
 
-### 4️⃣ Habilite as macros no Excel
+### 4️⃣ Script Python
 
-Para permitir a integração com as APIs:
 
-![Excel habilitar macro](habilitar_macro_excel.png)
 
 ---
 
@@ -95,38 +77,6 @@ https://www.arquivo-nfe.com/api-sintegra-ccc-excel
 
 ---
 
-## 🎥 Demonstração
-
-Execute o GIF abaixo para visualizar o funcionamento:
-
-![funcionamento](Sintegra_ccc_excel.gif)
-
----
-
-# 🌐 API Sintegra Unificado
-
-A **API Sintegra / Cadastro Centralizado de Contribuintes (CCC)** automatiza a validação de informações fiscais durante:
-
-- cadastro de clientes
-- cadastro de fornecedores
-- emissão de nota fiscal
-
-A consulta é realizada em **tempo real** na fonte pública oficial mantida pela **SEFAZ RS em conjunto com as demais SEFAZ estaduais**.
-
-![Sintegra](sintegra.png)
-
----
-
-## 💼 Usos comuns
-
-✔ Verificar situação do contribuinte antes da emissão de notas fiscais  
-✔ Alternativa à consulta manual no SINTEGRA estadual  
-✔ Gestão cadastral e fiscal  
-✔ Validação de dados fiscais de empresas  
-✔ Verificação de regime tributário  
-✔ Criação de dossiês e processos de **KYC (Know Your Customer)**  
-
----
 
 ## 📄 Exemplo de retorno da API
 
@@ -148,11 +98,6 @@ Se este projeto foi útil para você:
 
 Isso ajuda outras pessoas a encontrarem o projeto.
 
----
-
-## 📝 Licença
-
-🚀 Aproveite o **Plano FREE** das APIs **Sintegra Unificado** e **CNPJ Receita**.
 
 ---
 
