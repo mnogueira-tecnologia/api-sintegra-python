@@ -31,6 +31,7 @@ A API permite realizar consultas utilizando **CNPJ, CPF ou Inscrição Estadual 
 ✔ Integração com sistemas ERP e aplicações próprias
 ✔ Processos de KYC (Know Your Customer)
 
+
 ## Diferenciais
 
 ✔ Consulta dos dados cadastrais disponibilizados pela SEFAZ da UF consultada.
