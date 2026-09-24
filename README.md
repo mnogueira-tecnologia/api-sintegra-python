@@ -21,7 +21,7 @@ A API permite realizar consultas utilizando **CNPJ, CPF ou Inscrição Estadual 
 ✔ Dados cadastrais retornados pela API<br>
 ✔ Integração simples via API REST<br>
 ✔ Processamento assíncrono utilizando `request_id`<br>
-✔ Exemplo prático de integração em Python<br>
+✔ Exemplo prático de integração em Python
 
 ## Casos de uso
 
@@ -29,8 +29,7 @@ A API permite realizar consultas utilizando **CNPJ, CPF ou Inscrição Estadual 
 ✔ Conferência cadastral automática<br>
 ✔ Verificação de informações de empresas e contribuintes<br>
 ✔ Integração com sistemas ERP e aplicações próprias<br>
-✔ Processos de KYC (Know Your Customer)<br>
-
+✔ Processos de KYC (Know Your Customer)
 
 ## Diferenciais
 
@@ -38,7 +37,7 @@ A API permite realizar consultas utilizando **CNPJ, CPF ou Inscrição Estadual 
 ✔ Comunicação segura por HTTPS.<br>
 ✔ Infraestrutura hospedada na Oracle Cloud no Brasil.<br>
 ✔ Painel web para configurações, consultas manuais e acompanhamento das integrações via API.<br>
-✔ API REST com suporte a consultas por CNPJ, CPF ou Inscrição Estadual.<br>
+✔ API REST com suporte a consultas por CNPJ, CPF ou Inscrição Estadual.
 
 ---
 
@@ -46,6 +45,7 @@ A API permite realizar consultas utilizando **CNPJ, CPF ou Inscrição Estadual 
 
 * Windows ou Linux
 * Python 3.x
+* Git (opcional, caso escolha clonar o projeto)
 * Biblioteca `requests`
 
 ---
@@ -77,7 +77,7 @@ No arquivo `consulta_sintegra.py`, informe seu token apenas localmente:
 TOKEN = 'SEU_TOKEN_AQUI'
 ```
 
-Antes de publicar o código, certifique-se de que o token não esteja preenchido.
+Antes de publicar o código no GitHub, certifique-se de que o token não esteja preenchido.
 
 ---
 
@@ -132,47 +132,121 @@ python3 --version
 
 ---
 
-### 4️⃣ Instalação das dependências
+### 4️⃣ Baixe o projeto
 
-O exemplo utiliza a biblioteca `requests` para realizar as chamadas HTTP à API.
+Você pode baixar o projeto diretamente pelo GitHub ou cloná-lo utilizando o Git.
 
-No Windows, abra o **Prompt de Comando (CMD)** e acesse a pasta onde está o projeto.
+#### Opção 1 — Baixar ZIP
 
-Execute:
+No GitHub, clique em:
+
+**Code → Download ZIP**
+
+Depois, extraia o arquivo em uma pasta do seu computador.
+
+#### Opção 2 — Clonar com Git
+
+Se o Git estiver instalado, execute:
+
+```bash
+git clone https://github.com/mnogueira-tecnologia/api-sintegra-python.git
+```
+
+Depois acesse a pasta do projeto:
+
+```bash
+cd api-sintegra-python
+```
+
+---
+
+### 5️⃣ Crie um ambiente virtual Python
+
+É recomendado utilizar um ambiente virtual para manter as dependências do projeto isoladas.
+
+#### Windows
+
+Dentro da pasta do projeto, execute:
+
+```bash
+python -m venv .venv
+```
+
+Ative o ambiente virtual:
+
+```bash
+.venv\Scripts\activate
+```
+
+Após a ativação, o terminal deverá apresentar algo semelhante a:
+
+```text
+(.venv) C:\Users\seu_usuario\api-sintegra-python>
+```
+
+#### Linux
+
+Crie o ambiente virtual:
+
+```bash
+python3 -m venv .venv
+```
+
+Ative o ambiente:
+
+```bash
+source .venv/bin/activate
+```
+
+---
+
+### 6️⃣ Instale as dependências
+
+Com o ambiente virtual ativado, instale a biblioteca `requests` e as demais dependências do projeto:
+
+#### Windows
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Depois da instalação, você pode verificar se a biblioteca `requests` está disponível:
-
-```bash
-pip show requests
-```
-
-No Linux, utilize:
+#### Linux
 
 ```bash
 pip3 install -r requirements.txt
 ```
 
+Você também pode verificar se a biblioteca `requests` foi instalada corretamente:
+
+```bash
+pip show requests
+```
+
 ---
 
-### 5️⃣ Script Python
+### 7️⃣ Configure seu Token
 
-O exemplo completo de integração está disponível no arquivo [`consulta_sintegra.py`](consulta_sintegra.py).
+Abra o arquivo [`consulta_sintegra.py`](consulta_sintegra.py) e informe seu token de acesso:
 
-O script demonstra:
+```python
+TOKEN = 'SEU_TOKEN_AQUI'
+```
 
-* configuração do token de acesso;
-* envio de consultas por CNPJ, CPF ou Inscrição Estadual;
-* armazenamento do `request_id` (protocolo da consulta);
-* consulta dos resultados de forma assíncrona;
-* novas tentativas quando a consulta ainda está em processamento;
-* tratamento das respostas da API;
-* exibição dos resultados em formato JSON.
+Por exemplo:
 
-Depois de instalar as dependências e configurar o token, execute:
+```python
+TOKEN = '123456789abcdef'
+```
+
+> ⚠️ **O token acima é apenas um exemplo. Nunca utilize ou publique tokens reais no GitHub.**
+
+Antes de executar o projeto, certifique-se de que o token esteja configurado corretamente.
+
+---
+
+### 8️⃣ Execute o exemplo
+
+Com o ambiente virtual ativado e o token configurado, execute o script.
 
 #### Windows
 
@@ -185,6 +259,17 @@ python consulta_sintegra.py
 ```bash
 python3 consulta_sintegra.py
 ```
+
+O script realizará as consultas configuradas no exemplo e exibirá os resultados retornados pela API no terminal.
+
+O exemplo demonstra:
+
+* envio de consultas por CNPJ, CPF ou Inscrição Estadual;
+* armazenamento do `request_id` (protocolo da consulta);
+* consulta dos resultados de forma assíncrona;
+* novas tentativas quando a consulta ainda está em processamento;
+* tratamento das respostas da API;
+* exibição dos resultados em formato JSON.
 
 O código-fonte completo está disponível em:
 
