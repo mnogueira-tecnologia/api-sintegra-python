@@ -92,6 +92,29 @@ O comando deverá apresentar a versão instalada, por exemplo:
 Python 3.13.x
 ```
 
+#### Linux
+
+Verifique se o Python 3 está instalado:
+
+```bash
+python3 --version
+```
+
+Caso não esteja instalado, utilize o gerenciador de pacotes da sua distribuição.
+
+Por exemplo, no Ubuntu/Debian:
+
+```bash
+sudo apt update
+sudo apt install python3 python3-pip python3-venv
+```
+
+Depois confirme:
+
+```bash
+python3 --version
+```
+
 ### 4️⃣ Instalação das dependências
 
 Em breve.
