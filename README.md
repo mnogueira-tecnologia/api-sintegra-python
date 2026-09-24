@@ -84,10 +84,13 @@ Depois de concluir a instalação, abra o **Prompt de Comando (CMD)** e execute:
 
 ```bash
 python --version
+```
 
 O comando deverá apresentar a versão instalada, por exemplo:
 
+```bash
 Python 3.13.x
+```
 
 ### 4️⃣ Instalação das dependências
 
