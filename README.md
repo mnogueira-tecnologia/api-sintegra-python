@@ -68,9 +68,26 @@ Copie o seu token de acesso.
 
 ### 3️⃣ Instalação do Python
 
-Em breve.
+O exemplo utiliza **Python 3**.
 
----
+#### Windows
+
+Baixe o Python pelo site oficial:
+
+https://www.python.org/downloads/windows/
+
+Durante a instalação, marque a opção:
+
+**Add python.exe to PATH**
+
+Depois de concluir a instalação, abra o **Prompt de Comando (CMD)** e execute:
+
+```bash
+python --version
+
+O comando deverá apresentar a versão instalada, por exemplo:
+
+Python 3.13.x
 
 ### 4️⃣ Instalação das dependências
 
