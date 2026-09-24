@@ -9,7 +9,7 @@ import json
 
 TOKEN = 'Informe seu TOKEN aqui'
 
-URL = "https://api.arquivo-nfe.com/cont/consulta_cadastro"
+URL = "https://api.arquivo-nfe.com/prod/consulta_cadastro"
 
 HEADERS = {
     "Authorization": f"Bearer {TOKEN}"
