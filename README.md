@@ -117,9 +117,27 @@ python3 --version
 
 ### 4️⃣ Instalação das dependências
 
-Em breve.
+O exemplo utiliza a biblioteca `requests` para realizar as chamadas à API.
 
----
+No Windows, abra o **Prompt de Comando (CMD)** e acesse a pasta onde está o projeto.
+
+Instale as dependências utilizando:
+
+```bash
+pip install -r requirements.txt
+```
+
+Depois da instalação, você pode verificar se a biblioteca `requests` está disponível:
+
+```bash
+pip show requests
+```
+
+No Linux, utilize:
+
+```bash
+pip3 install -r requirements.txt
+```
 
 ### 5️⃣ Script Python
 
