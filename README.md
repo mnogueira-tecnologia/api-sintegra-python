@@ -1,6 +1,6 @@
-# API Sintegra Unificado – Consulta CCC, CNPJ Receita e IE no Excel
+# Integração da API SINTEGRA em Python – Consulta de Inscrição Estadual em tempo real
 
-API para consulta de **Sintegra (Cadastro Centralizado de Contribuintes – CCC)** e **CNPJ da Receita Federal**, permitindo consultas em massa diretamente no **Excel via VBA**.
+Valide a situação fiscal de contribuintes diretamente nas SEFAZ estaduais com alta confiabilidade.
 
 Integração com as APIs do portal **arquivo-nfe.com**.
 
@@ -9,28 +9,35 @@ Integração com as APIs do portal **arquivo-nfe.com**.
 - API Sintegra
 - Consulta Sintegra
 - Sintegra CCC
-- Consulta CNPJ Receita Federal
 - Consulta Inscrição Estadual
 - API Fiscal Brasil
-- Consulta CNPJ em Excel
-- VBA Sintegra
-- Integração fiscal NF-e
 
-Excel projetado para realizar consultas de CNPJ, CPF ou IE em massa, integrando dados em tempo real diretamente do Sintegra e da base oficial da Receita Federal.
+Integre seu sistema Python a automatização de validação cadastral de contribuintes em tempo real, consultando diretamente as fontes oficiais das SEFAZ estaduais.
 
 Com uma interface intuitiva, permite a consulta simultânea de múltiplos CNPJs, CPF´s ou IE´s de acordo com suas necessidades.
 
-<b>Aba Sintegra</b>
-Projetada para consultas em massa de CNPJ, CPF ou Inscrição Estadual (IE), esta funcionalidade integra dados em tempo real diretamente da base do Sintegra. Com uma interface intuitiva, é possível consultar múltiplos documentos simultaneamente, de acordo com a sua necessidade. As informações coletadas são organizadas de forma clara e estruturada na planilha de retorno, apresentando dados como: razão social ou nome do contribuinte, situação cadastral (habilitado ou não habilitado), credenciamento para emissão de CT-e e NF-e, regime de apuração do ICMS, CNAE, data de baixa, logradouro, número, município, entre outros. 
+<b>Benefícios</b>
+✔ Consulta por CNPJ, CPF ou IE
+✔ Dados atualizados em tempo real
+✔ Integração simples via API REST
 
-<b>Aba CNPJ Receita</b>
-Da mesma forma, realize consultas em massa de CNPJs diretamente da base oficial da Receita Federal. De forma simples e rápida, obtenha informações cadastrais completas, incluindo: situação cadastral, identificação de matriz ou filial, natureza jurídica, CNAEs, endereço, dados de enquadramento no Simples Nacional e relação de sócios. 
+<b>Casos de uso</b>
+✔ Validação antes da emissão de NF
+✔ Conferência cadastral automática
+✔ Verificação de regime tributário
+✔ Processos de KYC (Know Your Customer)
+
+<b>Diferenciais</b>
+✔ Consulta realizada em tempo real na fonte pública oficial.
+✔ Acesso seguro via https em servidor Oracle Cloud Brasil, com alta performance e baixa latência. Seguro e criptografado, atendendo as boas práticas de segurança da informação de acordo com a legislação vigente.
+✔ Painel de controle web para configurações, consultas manual e acompanhamento das integrações via API
+✔ Consulta por CNPJ, CPF, IE e UF
 
 <br>
 
 <h3>🚀 Tecnologias Utilizadas</h3> 
 
-Excel, VBA e API´s arquivo-nfe.com
+Python, e API Sintegra ArquivoNfe API Plataform
 
 <br>
 
