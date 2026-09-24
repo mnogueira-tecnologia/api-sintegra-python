@@ -9,8 +9,8 @@ HEADERS = {
 }
 
 PARAMETROS = {
-    "uf": "SP",
-    "cnpj": "COLOQUE_UM_CNPJ_AQUI"
+    "uf": input("Digite a UF: ").strip().upper(),
+    "cnpj": input("Digite o CNPJ: ").strip()
 }
 
 print("Consultando SINTEGRA...")
