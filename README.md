@@ -141,17 +141,28 @@ pip3 install -r requirements.txt
 
 ### 5️⃣ Script Python
 
-Em breve.
+O exemplo completo de integração está disponível no arquivo consulta_sintegra.py.
 
----
+O script demonstra:
 
-## 📘 Documentação completa
+- configuração do token de acesso;
+- envio de consultas por CNPJ, CPF ou Inscrição Estadual;
+- armazenamento do request_id (protocolo de consulta);
+- consulta dos resultados de forma assíncrona;
+- novas tentativas quando a consulta ainda está em processamento;
+- tratamento das respostas da API;
+- exibição dos resultados em formato JSON.
 
-Mais detalhes em:
+Para executar:
 
-https://www.arquivo-nfe.com/api-sintegra-ccc-excel
+```bash
+pip install -r requirements.txt
+python consulta_sintegra.py
+```
 
----
+O código-fonte completo está disponível neste repositório:
+
+consulta_sintegra.py
 
 ## 📄 Exemplo de retorno da API
 
