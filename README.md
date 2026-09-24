@@ -282,6 +282,8 @@ O código-fonte completo está disponível em:
 O exemplo abaixo apresenta um retorno da API após a conclusão da consulta:
 
 ![Retorno JSON](teste_etapa1.png)
+![Retorno JSON](teste_etapa2.png)
+![Retorno JSON](teste_etapa3.png)
 
 ---
 
