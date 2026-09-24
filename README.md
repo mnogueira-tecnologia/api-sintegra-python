@@ -281,7 +281,7 @@ O código-fonte completo está disponível em:
 
 O exemplo abaixo apresenta um retorno da API após a conclusão da consulta:
 
-![Retorno JSON](exemplo_ccc_retorno_json.png)
+![Retorno JSON](teste_etapa1.png)
 
 ---
 
