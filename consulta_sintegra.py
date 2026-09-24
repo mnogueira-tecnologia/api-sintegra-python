@@ -16,7 +16,7 @@ PARAMETROS = {
 print("Consultando SINTEGRA...")
 print()
 
-resposta = requests.get(
+resposta = requests.post(
     URL,
     headers=HEADERS,
     params=PARAMETROS,
