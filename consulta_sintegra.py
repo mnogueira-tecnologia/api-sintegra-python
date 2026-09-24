@@ -1,6 +1,6 @@
 import requests
 
-TOKEN = "COLOQUE_SEU_TOKEN_AQUI"
+TOKEN = input("Digite seu token de acesso: ")
 
 URL = "https://api.arquivo-nfe.com/prod/consulta_cadastro"
 
