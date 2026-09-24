@@ -7,7 +7,7 @@ import json
 # CONFIGURAÇÃO
 # ============================================================
 
-TOKEN = 'Informe aqui seu TOKEN'
+TOKEN = 'Informe seu TOKEN aqui'
 
 URL = "https://api.arquivo-nfe.com/cont/consulta_cadastro"
 
@@ -86,10 +86,10 @@ def criar_parametros(consulta):
     return parametros
 
 
-# ==============================================================================================================
+# ============================================================
 # ETAPA 1
-# ENVIA O LOTE DE CONSULTAS E GUARDA O REQUEST_ID" (PROTOCOLOS) PARA CONSULTA DO RESPECTIVO RETORNO
-# ==============================================================================================================
+# ENVIA O LOTE DE CONSULTAS
+# ============================================================
 
 print()
 print("=" * 70)
@@ -137,10 +137,10 @@ for numero, consulta in enumerate(consultas, start=1):
 
             continue
 
-        print(
-            f"Resposta: "
-            f"{json.dumps(dados, ensure_ascii=False)}"
-        )
+        #print(
+        #    f"Resposta: "
+        #    f"{json.dumps(dados, ensure_ascii=False)}"
+        #)
 
         # ----------------------------------------------------
         # ERRO
@@ -215,7 +215,7 @@ for numero, consulta in enumerate(consultas, start=1):
 
 # ============================================================
 # ETAPA 2
-# CONSULTA OS RETORNOS COM OS "REQUEST_ID" ARMAZENADOS (PROTOCOLOS) 
+# CONSULTA OS REQUEST_ID
 # ============================================================
 
 print()
